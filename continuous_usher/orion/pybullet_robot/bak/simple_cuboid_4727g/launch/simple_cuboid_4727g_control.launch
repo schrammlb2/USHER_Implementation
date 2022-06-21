@@ -1,0 +1,7 @@
+<launch>
+  <rosparam command="load" file="$(find fusion2urdf)/launch/simple_cuboid_4727g_controller.yaml"/>
+  <node args="BL_position_controller BR_position_controller FR_position_controller FL_position_controller joint_state_controller" name="controller_spawner" ns="simple_cuboid_4727g" output="screen" pkg="controller_manager" respawn="false" type="spawner"/>
+  <node name="robot_state_publisher" output="screen" pkg="robot_state_publisher" respawn="false" type="robot_state_publisher">
+    <remap from="/joint_states" to="/simple_cuboid_4727g/joint_states"/>
+  </node>
+</launch>

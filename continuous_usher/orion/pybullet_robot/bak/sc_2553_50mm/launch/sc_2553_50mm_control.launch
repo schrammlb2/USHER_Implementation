@@ -1,0 +1,7 @@
+<launch>
+  <rosparam command="load" file="$(find fusion2urdf)/launch/sc_2553_50mm_controller.yaml"/>
+  <node args="BL_position_controller BR_position_controller FR_position_controller FL_position_controller joint_state_controller" name="controller_spawner" ns="sc_2553_50mm" output="screen" pkg="controller_manager" respawn="false" type="spawner"/>
+  <node name="robot_state_publisher" output="screen" pkg="robot_state_publisher" respawn="false" type="robot_state_publisher">
+    <remap from="/joint_states" to="/sc_2553_50mm/joint_states"/>
+  </node>
+</launch>

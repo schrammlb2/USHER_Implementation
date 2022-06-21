@@ -1,0 +1,94 @@
+Evaluating  ['../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-24-05.txt', '../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-25-16.txt'] ['../real_robot_data/Jan14_2020_Control_Signals/control_take09.csg', '../real_robot_data/Jan14_2020_Control_Signals/control_take10.csg']
+factor = 0.7
+Reading ground truth data and control signals...
+Data read successfully.
+Initial Guess:  [0.07630829 0.77991879 0.43840923 0.72346518]
+Initial Loss:  [89.66544405]
+Final coefficients:  [0.         0.0633797  0.69718497 0.        ]
+Final Loss:  [48.24828194]
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =            4     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  8.96654D+01    |proj g|=  1.92369D+00
+
+At iterate    1    f=  7.91591D+01    |proj g|=  1.57936D+00
+
+At iterate    2    f=  7.83652D+01    |proj g|=  1.57661D+00
+
+At iterate    3    f=  7.79137D+01    |proj g|=  1.87545D+00
+
+At iterate    4    f=  7.71203D+01    |proj g|=  1.89273D+00
+
+At iterate    5    f=  7.41558D+01    |proj g|=  1.97140D+00
+
+At iterate    6    f=  6.75103D+01    |proj g|=  2.00000D+00
+
+At iterate    7    f=  6.50283D+01    |proj g|=  1.60879D+00
+
+At iterate    8    f=  6.30928D+01    |proj g|=  1.59745D+00
+
+At iterate    9    f=  6.01343D+01    |proj g|=  2.00000D+00
+
+At iterate   10    f=  5.50389D+01    |proj g|=  1.73968D+00
+
+At iterate   11    f=  5.31815D+01    |proj g|=  1.72214D+00
+
+At iterate   12    f=  5.30317D+01    |proj g|=  1.52370D+00
+
+At iterate   13    f=  5.27975D+01    |proj g|=  2.00000D+00
+
+At iterate   14    f=  5.01445D+01    |proj g|=  1.38021D+00
+
+At iterate   15    f=  5.01421D+01    |proj g|=  2.00000D+00
+  Positive dir derivative in projection 
+  Using the backtracking step 
+
+At iterate   16    f=  5.00636D+01    |proj g|=  1.37559D+00
+
+At iterate   17    f=  5.00570D+01    |proj g|=  6.25305D-01
+
+At iterate   18    f=  5.00568D+01    |proj g|=  2.00000D+00
+  Positive dir derivative in projection 
+  Using the backtracking step 
+
+At iterate   19    f=  4.92870D+01    |proj g|=  1.93009D+00
+
+At iterate   20    f=  4.92645D+01    |proj g|=  1.94280D+00
+
+At iterate   21    f=  4.92550D+01    |proj g|=  1.40302D-01
+
+At iterate   22    f=  4.92550D+01    |proj g|=  2.74385D-01
+
+At iterate   23    f=  4.92550D+01    |proj g|=  7.16251D-01
+
+At iterate   24    f=  4.92550D+01    |proj g|=  9.31060D-01
+
+At iterate   25    f=  4.92550D+01    |proj g|=  2.74003D-01
+
+At iterate   26    f=  4.92550D+01    |proj g|=  2.74027D-01
+
+At iterate   27    f=  4.92550D+01    |proj g|=  1.38945D-01
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+    4     27     56     30     0     2   1.389D-01   4.925D+01
+  F =   49.254963249454804     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             

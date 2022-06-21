@@ -1,0 +1,13 @@
+Evaluating  ['../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-27-31.txt', '../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-28-09.txt'] ['../real_robot_data/Jan14_2020_Control_Signals/control_take11.csg', '../real_robot_data/Jan14_2020_Control_Signals/control_take12.csg']
+Reading ground truth data and control signals...
+Data read successfully.
+Initial Guess:  [1.03813564 1.37132522 1.21575983 1.34673923]
+Initial Loss:  [115.11023982]
+Optimization terminated successfully.
+         Current function value: 63.447437
+         Iterations: 446
+         Function evaluations: 740
+Final coefficients(raw_in):  [-0.79689966 -0.07312163 -2.48591324 -2.14450527]
+Final coefficients:  [0.6213782  0.96345547 0.15370327 0.2096916 ]
+Final loss:  [63.44743699]
+Running time for CSG 11: 143.70302438735962

@@ -1,0 +1,21 @@
+https://matplotlib.org/examples/color/named_colors.html
+GT1: lightcoral
+GT2: dodgerblue
+L-BFGS-B: green / seagreen
+Nelder-Mead: orange / darkorange
+Uranus-Model: violet
+CMA-ES: -- / slateblue
+
+Where CMA-ES, Nelder-Mead, L-BFGS-B stick with the color set in bar plot.
+
+https://www.overleaf.com/learn/latex/Using_colours_in_LaTeX
+
+https://www.overleaf.com/4673715995cndzhpbtfzbs
+
+In LaTeX, the corresponding color is 
+%Red
+%Blue
+%RedOrange
+%Green
+%Lavender
+%Cyan

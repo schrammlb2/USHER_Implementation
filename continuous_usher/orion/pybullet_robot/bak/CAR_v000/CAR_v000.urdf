@@ -1,0 +1,2138 @@
+<?xml version="1.0" ?>
+<robot name="CAR_v000">
+<link name="base_link">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.09570508957541472 -0.007999999999984186 -0.001500000000000009"/>
+    <mass value="0.7665979453758464"/>
+    <inertia ixx="0.001404" ixy="-0.0" ixz="0.0" iyy="0.00383" iyz="-0.0" izz="0.005233"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="bin_stl/base_link_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="bin_stl/base_link_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="Wheel_Motor_holder_v4_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.014980279064389493 -0.0014695146767486275 -0.009738743339461516"/>
+    <mass value="0.04206846428767663"/>
+    <inertia ixx="1.5e-05" ixy="0.0" ixz="-0.0" iyy="1.3e-05" iyz="4e-06" izz="1.4e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.009 -0.053 0.003"/>
+    <geometry>
+      <mesh filename="bin_stl/Wheel_Motor_holder_v4_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.009 -0.053 0.003"/>
+    <geometry>
+      <mesh filename="bin_stl/Wheel_Motor_holder_v4_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="Wheel_Motor_holder_v4_2">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.01501995653690974 -0.0014695146767421535 -0.009738743339461703"/>
+    <mass value="0.04206846428767663"/>
+    <inertia ixx="1.5e-05" ixy="0.0" ixz="-0.0" iyy="1.3e-05" iyz="4e-06" izz="1.4e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.177224 -0.053 0.003"/>
+    <geometry>
+      <mesh filename="bin_stl/Wheel_Motor_holder_v4_2_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.177224 -0.053 0.003"/>
+    <geometry>
+      <mesh filename="bin_stl/Wheel_Motor_holder_v4_2_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="Wheel_Motor_holder_v4_3">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.014980514665696831 0.0014695146767694511 -0.009738743339462005"/>
+    <mass value="0.04206846428767663"/>
+    <inertia ixx="1.5e-05" ixy="0.0" ixz="0.0" iyy="1.3e-05" iyz="-4e-06" izz="1.4e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.177224 0.069 0.003"/>
+    <geometry>
+      <mesh filename="bin_stl/Wheel_Motor_holder_v4_3_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.177224 0.069 0.003"/>
+    <geometry>
+      <mesh filename="bin_stl/Wheel_Motor_holder_v4_3_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="Wheel_Motor_holder_v4_4">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.015019720935602422 0.001469514676748787 -0.00973874333946173"/>
+    <mass value="0.04206846428767663"/>
+    <inertia ixx="1.5e-05" ixy="0.0" ixz="0.0" iyy="1.3e-05" iyz="-4e-06" izz="1.4e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.009 0.069 0.003"/>
+    <geometry>
+      <mesh filename="bin_stl/Wheel_Motor_holder_v4_4_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.009 0.069 0.003"/>
+    <geometry>
+      <mesh filename="bin_stl/Wheel_Motor_holder_v4_4_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="Side_board_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.01494917383573581 -0.0028935529397421528 0.020556902828266686"/>
+    <mass value="0.10281385598487688"/>
+    <inertia ixx="4.7e-05" ixy="0.0" ixz="-0.0" iyy="0.000126" iyz="1e-05" izz="9.3e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.087 0.0699 0.0"/>
+    <geometry>
+      <mesh filename="bin_stl/Side_board_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.087 0.0699 0.0"/>
+    <geometry>
+      <mesh filename="bin_stl/Side_board_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="Side_board_2">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.014949173835727282 0.0028935529397536713 0.020556902828266877"/>
+    <mass value="0.10281385598487688"/>
+    <inertia ixx="4.7e-05" ixy="0.0" ixz="0.0" iyy="0.000126" iyz="-1e-05" izz="9.3e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.057 -0.0539 -0.0"/>
+    <geometry>
+      <mesh filename="bin_stl/Side_board_2_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.057 -0.0539 -0.0"/>
+    <geometry>
+      <mesh filename="bin_stl/Side_board_2_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="Gear_Pan_Base_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-3.3728011883393805e-07 -0.023523519255164074 0.02799999999429037"/>
+    <mass value="0.06854334361559104"/>
+    <inertia ixx="6.7e-05" ixy="-0.0" ixz="0.0" iyy="4.4e-05" iyz="0.0" izz="3.1e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.199724 -0.007 -0.0"/>
+    <geometry>
+      <mesh filename="bin_stl/Gear_Pan_Base_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.199724 -0.007 -0.0"/>
+    <geometry>
+      <mesh filename="bin_stl/Gear_Pan_Base_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="carboat_bot_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.007337979399613531 0.017499972137289294 0.014605907953560182"/>
+    <mass value="0.0475172457350421"/>
+    <inertia ixx="2e-05" ixy="0.0" ixz="1e-06" iyy="1.1e-05" iyz="0.0" izz="1.5e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.199724 0.021 -0.0021"/>
+    <geometry>
+      <mesh filename="bin_stl/carboat_bot_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.199724 0.021 -0.0021"/>
+    <geometry>
+      <mesh filename="bin_stl/carboat_bot_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="carboat_2_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.00733797939961317 0.010499972137289105 0.014605907953560197"/>
+    <mass value="0.0475172457350421"/>
+    <inertia ixx="2e-05" ixy="0.0" ixz="1e-06" iyy="1.1e-05" iyz="0.0" izz="1.5e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.199724 0.021 -0.056"/>
+    <geometry>
+      <mesh filename="bin_stl/carboat_2_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.199724 0.021 -0.056"/>
+    <geometry>
+      <mesh filename="bin_stl/carboat_2_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="carboat_3_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-2.5216919485870903e-07 0.0005055238507020443 0.005662256589116094"/>
+    <mass value="0.0475172457350421"/>
+    <inertia ixx="1.1e-05" ixy="0.0" ixz="0.0" iyy="1.5e-05" iyz="1e-06" izz="2e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.199739 0.019476 -0.113752"/>
+    <geometry>
+      <mesh filename="bin_stl/carboat_3_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.199739 0.019476 -0.113752"/>
+    <geometry>
+      <mesh filename="bin_stl/carboat_3_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="motor_support_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-2.2430746302037896e-07 -3.8410285859748206e-07 0.004826000000000011"/>
+    <mass value="0.0009521312819828578"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.194739 -0.014374 -0.0887"/>
+    <geometry>
+      <mesh filename="bin_stl/motor_support_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.194739 -0.014374 -0.0887"/>
+    <geometry>
+      <mesh filename="bin_stl/motor_support_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="Servo1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.004999776361403502 -0.024825025821425904 -0.009085741817137366"/>
+    <mass value="0.25554569845209546"/>
+    <inertia ixx="6.7e-05" ixy="0.0" ixz="-0.0" iyy="3.9e-05" iyz="0.0" izz="4.7e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.194739 -0.014374 -0.098352"/>
+    <geometry>
+      <mesh filename="bin_stl/Servo1_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.194739 -0.014374 -0.098352"/>
+    <geometry>
+      <mesh filename="bin_stl/Servo1_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="Camera_support_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="3.9159065723382014e-07 -3.841030241733684e-07 0.006350011703253555"/>
+    <mass value="0.012606343453885066"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.209162 0.012426 -0.178792"/>
+    <geometry>
+      <mesh filename="bin_stl/Camera_support_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.209162 0.012426 -0.178792"/>
+    <geometry>
+      <mesh filename="bin_stl/Camera_support_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="D354_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0019018702340913296 0.00024690506094453626 0.012439152691298971"/>
+    <mass value="0.35132125245300416"/>
+    <inertia ixx="0.000227" ixy="-1e-06" ixz="-0.0" iyy="3.2e-05" iyz="-0.0" izz="0.000229"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.209162 0.012426 -0.191492"/>
+    <geometry>
+      <mesh filename="bin_stl/D354_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.209162 0.012426 -0.191492"/>
+    <geometry>
+      <mesh filename="bin_stl/D354_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="Wheel_Motor_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.01549413298973287 -0.024753744950228453 -0.00033026828675572495"/>
+    <mass value="0.1253897990307548"/>
+    <inertia ixx="5.8e-05" ixy="0.0" ixz="-0.0" iyy="2.2e-05" iyz="1e-06" izz="5.8e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.0218 -0.06235 0.029675"/>
+    <geometry>
+      <mesh filename="bin_stl/Wheel_Motor_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.0218 -0.06235 0.029675"/>
+    <geometry>
+      <mesh filename="bin_stl/Wheel_Motor_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="Wheel_Motor_2">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.015494368591032287 -0.024753744950222062 -0.0003302682867558915"/>
+    <mass value="0.1253897990307548"/>
+    <inertia ixx="5.8e-05" ixy="0.0" ixz="-0.0" iyy="2.2e-05" iyz="1e-06" izz="5.8e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.178024 -0.06235 0.029675"/>
+    <geometry>
+      <mesh filename="bin_stl/Wheel_Motor_2_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.178024 -0.06235 0.029675"/>
+    <geometry>
+      <mesh filename="bin_stl/Wheel_Motor_2_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="Wheel_Motor_3">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.015506102611575256 0.024753744950248603 -0.0003302682867560927"/>
+    <mass value="0.1253897990307548"/>
+    <inertia ixx="5.8e-05" ixy="0.0" ixz="0.0" iyy="2.2e-05" iyz="-1e-06" izz="5.8e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.177674 0.07835 0.029675"/>
+    <geometry>
+      <mesh filename="bin_stl/Wheel_Motor_3_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.177674 0.07835 0.029675"/>
+    <geometry>
+      <mesh filename="bin_stl/Wheel_Motor_3_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="Wheel_Motor_4">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.015494132989723877 0.02475374495022936 -0.0003302682867558568"/>
+    <mass value="0.1253897990307548"/>
+    <inertia ixx="5.8e-05" ixy="0.0" ixz="0.0" iyy="2.2e-05" iyz="-1e-06" izz="5.8e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.0098 0.07835 0.029675"/>
+    <geometry>
+      <mesh filename="bin_stl/Wheel_Motor_4_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.0098 0.07835 0.029675"/>
+    <geometry>
+      <mesh filename="bin_stl/Wheel_Motor_4_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="1.3397573075946134e-07 -3.6957705445983535e-07 6.742742474780128e-08"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.162525 -0.098849 0.013646"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.162525 -0.098849 0.013646"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_2">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-2.7690643081279553e-07 -3.6957705516760253e-07 -2.1820454366994202e-08"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.146241 -0.098849 0.02039"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_2_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.146241 -0.098849 0.02039"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_2_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_3">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-3.030287325234138e-07 -3.6957705445983535e-07 3.6957703840323486e-07"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.139495 -0.098849 0.036674"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_3_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.139495 -0.098849 0.036674"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_3_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_4">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-2.1378085279799564e-07 -3.695770543210575e-07 -4.1305121635526465e-08"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.146239 -0.098849 0.052958"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_4_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.146239 -0.098849 0.052958"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_4_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_5">
+  <inertial>
+    <origin rpy="0 0 0" xyz="3.9482165470339226e-07 -3.695770543210575e-07 -6.742742346410591e-08"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="-0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.162522 -0.098849 0.059704"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_5_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.162522 -0.098849 0.059704"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_5_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_6">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-1.9429618525190762e-07 -3.6957705402962393e-07 2.1820456171106617e-08"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="-0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.178807 -0.098849 0.05296"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_6_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.178807 -0.098849 0.05296"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_6_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_7">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-1.6817388420742319e-07 -3.695770537520682e-07 -3.695770371334173e-07"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.185553 -0.098849 0.036676"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_7_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.185553 -0.098849 0.036676"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_7_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_8">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-2.5742176334997424e-07 -3.695770537520682e-07 4.130512357841676e-08"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.178809 -0.098849 0.020392"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_8_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.178809 -0.098849 0.020392"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_8_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_r_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="2.1820446501757962e-08 -3.6957706120444023e-07 4.130512300942746e-08"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="-0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.009985 -0.098849 0.020392"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.009985 -0.098849 0.020392"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_r_2">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-6.742743233201232e-08 -3.695770607881066e-07 -3.6957703727913405e-07"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.016729 -0.098849 0.036676"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_2_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.016729 -0.098849 0.036676"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_2_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_r_3">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-4.1305131122729155e-08 -3.6957706085749553e-07 2.1820456129473254e-08"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.009983 -0.098849 0.05296"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_3_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.009983 -0.098849 0.05296"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_3_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_r_4">
+  <inertial>
+    <origin rpy="0 0 0" xyz="3.695770294477249e-07 -3.6957706149587377e-07 -6.74274230200167e-08"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.006301 -0.098849 0.059704"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_4_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.006301 -0.098849 0.059704"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_4_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_r_5">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-2.1820463571436965e-08 -3.695770609962734e-07 -4.1305121954715585e-08"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.022585 -0.098849 0.052958"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_5_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.022585 -0.098849 0.052958"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_5_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_r_6">
+  <inertial>
+    <origin rpy="0 0 0" xyz="6.742741604295888e-08 -3.6957706163465165e-07 3.6957703861834057e-07"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="-0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.029329 -0.098849 0.036674"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_6_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.029329 -0.098849 0.036674"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_6_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_r_7">
+  <inertial>
+    <origin rpy="0 0 0" xyz="4.1305113839679164e-08 -3.695770622730299e-07 -2.1820453655757577e-08"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.022583 -0.098849 0.02039"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_7_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.022583 -0.098849 0.02039"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_7_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_r_8">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-3.695770468756243e-07 -3.6957706234241883e-07 6.7427425125971e-08"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="-0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.006299 -0.098849 0.013646"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_8_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.006299 -0.098849 0.013646"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_8_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_9">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-3.6957703730602226e-07 3.695770618289407e-07 6.742742439738714e-08"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.005699 0.114849 0.013646"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_9_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.005699 0.114849 0.013646"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_9_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_11">
+  <inertial>
+    <origin rpy="0 0 0" xyz="4.130512394270869e-08 3.695770611211735e-07 -2.1820454082499552e-08"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.021983 0.114849 0.02039"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_11_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.021983 0.114849 0.02039"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_11_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_12">
+  <inertial>
+    <origin rpy="0 0 0" xyz="6.74274254139351e-08 3.695770620509853e-07 3.6957703911794093e-07"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.028729 0.114849 0.036674"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_12_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.028729 0.114849 0.036674"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_12_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_10">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-2.1820453256771177e-08 3.695770616901628e-07 -4.1305122204515765e-08"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="-0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.021985 0.114849 0.052958"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_10_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.021985 0.114849 0.052958"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_10_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_13">
+  <inertial>
+    <origin rpy="0 0 0" xyz="3.695770404380655e-07 3.695770615513849e-07 -6.742742385268397e-08"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="-0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.005701 0.114849 0.059704"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_13_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.005701 0.114849 0.059704"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_13_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_16">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-4.1305121127252487e-08 3.695770610934179e-07 2.1820455033128017e-08"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.010583 0.114849 0.05296"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_16_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.010583 0.114849 0.05296"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_16_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_15">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-6.742742283613601e-08 3.695770616901628e-07 -3.6957703862527946e-07"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.017329 0.114849 0.036676"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_15_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.017329 0.114849 0.036676"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_15_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_14">
+  <inertial>
+    <origin rpy="0 0 0" xyz="2.1820456389681775e-08 3.695770621203742e-07 4.130512294003852e-08"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.010585 0.114849 0.020392"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_14_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.010585 0.114849 0.020392"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_14_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_r_9">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-2.5742175310816684e-07 3.695770815909105e-07 4.1305123116980313e-08"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.178459 0.114849 0.020392"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_9_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.178459 0.114849 0.020392"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_9_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_r_10">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-1.6817387385459348e-07 3.695770807998766e-07 -3.695770382713959e-07"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="-0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.185203 0.114849 0.036676"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_10_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.185203 0.114849 0.036676"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_10_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_r_11">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-1.9429617501010021e-07 3.695770810219212e-07 2.1820454998433547e-08"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.178457 0.114849 0.05296"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_11_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.178457 0.114849 0.05296"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_11_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_r_16">
+  <inertial>
+    <origin rpy="0 0 0" xyz="3.948216644455993e-07 3.695770817296884e-07 -6.742742413717862e-08"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.162172 0.114849 0.059704"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_16_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.162172 0.114849 0.059704"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_16_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_r_15">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-2.1378084216761017e-07 3.6957708129947697e-07 -4.130512298167188e-08"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.145889 0.114849 0.052958"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_15_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.145889 0.114849 0.052958"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_15_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_r_12">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-3.0302872186527274e-07 3.6957708145213264e-07 3.6957703804935127e-07"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.139145 0.114849 0.036674"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_12_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.139145 0.114849 0.036674"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_12_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_r_13">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-2.7690642068201043e-07 3.695770815909105e-07 -2.1820455362725477e-08"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="-0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.145891 0.114849 0.02039"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_13_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.145891 0.114849 0.02039"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_13_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="satelitewheel_r_14">
+  <inertial>
+    <origin rpy="0 0 0" xyz="1.3397574033513493e-07 3.695770811606991e-07 6.742742393942014e-08"/>
+    <mass value="0.0020070751161032695"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="-0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.162175 0.114849 0.013646"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_14_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.162175 0.114849 0.013646"/>
+    <geometry>
+      <mesh filename="bin_stl/satelitewheel_r_14_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="LeftWheel_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-2.3560323034188535e-07 0.015199605891814835 5.855822771128061e-12"/>
+    <mass value="0.0837215779035776"/>
+    <inertia ixx="2.6e-05" ixy="0.0" ixz="-0.0" iyy="1.7e-05" iyz="-0.0" izz="2.6e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.162524 -0.07585 0.036675"/>
+    <geometry>
+      <mesh filename="bin_stl/LeftWheel_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.162524 -0.07585 0.036675"/>
+    <geometry>
+      <mesh filename="bin_stl/LeftWheel_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="RightWheel_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-7.548579816774037e-13 0.015199605891808465 -2.5597510222574726e-12"/>
+    <mass value="0.08372157790357845"/>
+    <inertia ixx="2.6e-05" ixy="-0.0" ixz="-0.0" iyy="1.7e-05" iyz="-0.0" izz="2.6e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.0063 -0.07585 0.036675"/>
+    <geometry>
+      <mesh filename="bin_stl/RightWheel_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.0063 -0.07585 0.036675"/>
+    <geometry>
+      <mesh filename="bin_stl/RightWheel_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="RightWheel_2">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-2.356005511794379e-07 -0.015199605891788301 -2.560326950451497e-12"/>
+    <mass value="0.08372157790357845"/>
+    <inertia ixx="2.6e-05" ixy="-0.0" ixz="0.0" iyy="1.7e-05" iyz="0.0" izz="2.6e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.162174 0.09185 0.036675"/>
+    <geometry>
+      <mesh filename="bin_stl/RightWheel_2_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.162174 0.09185 0.036675"/>
+    <geometry>
+      <mesh filename="bin_stl/RightWheel_2_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="LeftWheel_2">
+  <inertial>
+    <origin rpy="0 0 0" xyz="1.923808334858279e-12 -0.015199605891807577 5.855649298780463e-12"/>
+    <mass value="0.0837215779035776"/>
+    <inertia ixx="2.6e-05" ixy="0.0" ixz="0.0" iyy="1.7e-05" iyz="0.0" izz="2.6e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.0057 0.09185 0.036675"/>
+    <geometry>
+      <mesh filename="bin_stl/LeftWheel_2_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.0057 0.09185 0.036675"/>
+    <geometry>
+      <mesh filename="bin_stl/LeftWheel_2_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="Servo2_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.024474966690774896 -0.009086125919995813 0.005000011014387476"/>
+    <mass value="0.25554569845209546"/>
+    <inertia ixx="3.9e-05" ixy="-0.0" ixz="0.0" iyy="4.7e-05" iyz="0.0" izz="6.7e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.224612 0.000876 -0.121767"/>
+    <geometry>
+      <mesh filename="bin_stl/Servo2_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.224612 0.000876 -0.121767"/>
+    <geometry>
+      <mesh filename="bin_stl/Servo2_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="Gear_Pan_Neck_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="2.899118378696386e-07 -0.02695038410856762 0.030523530937439175"/>
+    <mass value="0.06854334361559104"/>
+    <inertia ixx="6.7e-05" ixy="-0.0" ixz="0.0" iyy="3.1e-05" iyz="-0.0" izz="4.4e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.209162 -0.014524 -0.126767"/>
+    <geometry>
+      <mesh filename="bin_stl/Gear_Pan_Neck_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.209162 -0.014524 -0.126767"/>
+    <geometry>
+      <mesh filename="bin_stl/Gear_Pan_Neck_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<joint name="rigid31" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.009 0.053 -0.003"/>
+  <parent link="base_link"/>
+  <child link="Wheel_Motor_holder_v4_1"/>
+</joint>
+<transmission name="rigid31_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rigid31">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rigid31_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="rigid32" type="fixed">
+  <origin rpy="0 0 0" xyz="0.177224 0.053 -0.003"/>
+  <parent link="base_link"/>
+  <child link="Wheel_Motor_holder_v4_2"/>
+</joint>
+<transmission name="rigid32_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rigid32">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rigid32_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="rigid33" type="fixed">
+  <origin rpy="0 0 0" xyz="0.177224 -0.069 -0.003"/>
+  <parent link="base_link"/>
+  <child link="Wheel_Motor_holder_v4_3"/>
+</joint>
+<transmission name="rigid33_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rigid33">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rigid33_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="rigid34" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.009 -0.069 -0.003"/>
+  <parent link="base_link"/>
+  <child link="Wheel_Motor_holder_v4_4"/>
+</joint>
+<transmission name="rigid34_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rigid34">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rigid34_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="rigid35" type="fixed">
+  <origin rpy="0 0 0" xyz="0.087 -0.0699 0.0"/>
+  <parent link="base_link"/>
+  <child link="Side_board_1"/>
+</joint>
+<transmission name="rigid35_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rigid35">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rigid35_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="rigid36" type="fixed">
+  <origin rpy="0 0 0" xyz="0.057 0.0539 0.0"/>
+  <parent link="base_link"/>
+  <child link="Side_board_2"/>
+</joint>
+<transmission name="rigid36_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rigid36">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rigid36_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="rigid37" type="fixed">
+  <origin rpy="0 0 0" xyz="0.199724 0.007 0.0"/>
+  <parent link="base_link"/>
+  <child link="Gear_Pan_Base_1"/>
+</joint>
+<transmission name="rigid37_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rigid37">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rigid37_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="rigid38" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 -0.028 0.0021"/>
+  <parent link="Gear_Pan_Base_1"/>
+  <child link="carboat_bot_1"/>
+</joint>
+<transmission name="rigid38_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rigid38">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rigid38_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="rigid39" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 -0.028 0.056"/>
+  <parent link="Gear_Pan_Base_1"/>
+  <child link="carboat_2_1"/>
+</joint>
+<transmission name="rigid39_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rigid39">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rigid39_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="Bot_motor" type="continuous">
+  <origin rpy="0 0 0" xyz="0.005 -0.03385 0.0154"/>
+  <parent link="Servo1_1"/>
+  <child link="carboat_3_1"/>
+  <axis xyz="-0.0 0.0 -0.01"/>
+</joint>
+<transmission name="Bot_motor_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Bot_motor">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Bot_motor_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="rigid43" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.004985 0.035374 0.0327"/>
+  <parent link="carboat_2_1"/>
+  <child link="motor_support_1"/>
+</joint>
+<transmission name="rigid43_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rigid43">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rigid43_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="rigid44" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 0.0 0.009652"/>
+  <parent link="motor_support_1"/>
+  <child link="Servo1_1"/>
+</joint>
+<transmission name="rigid44_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rigid44">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rigid44_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="rigid46" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 -0.02695 0.052025"/>
+  <parent link="Gear_Pan_Neck_1"/>
+  <child link="Camera_support_1"/>
+</joint>
+<transmission name="rigid46_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rigid46">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rigid46_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="rigid47" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 0.0 0.0127"/>
+  <parent link="Camera_support_1"/>
+  <child link="D354_1"/>
+</joint>
+<transmission name="rigid47_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rigid47">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rigid47_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="rigid48" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0308 0.00935 -0.026675"/>
+  <parent link="Wheel_Motor_holder_v4_1"/>
+  <child link="Wheel_Motor_1"/>
+</joint>
+<transmission name="rigid48_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rigid48">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rigid48_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="rigid49" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0008 0.00935 -0.026675"/>
+  <parent link="Wheel_Motor_holder_v4_2"/>
+  <child link="Wheel_Motor_2"/>
+</joint>
+<transmission name="rigid49_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rigid49">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rigid49_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="rigid50" type="fixed">
+  <origin rpy="0 0 0" xyz="0.00045 -0.00935 -0.026675"/>
+  <parent link="Wheel_Motor_holder_v4_3"/>
+  <child link="Wheel_Motor_3"/>
+</joint>
+<transmission name="rigid50_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rigid50">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rigid50_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="rigid51" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.0008 -0.00935 -0.026675"/>
+  <parent link="Wheel_Motor_holder_v4_4"/>
+  <child link="Wheel_Motor_4"/>
+</joint>
+<transmission name="rigid51_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rigid51">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rigid51_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute57" type="continuous">
+  <origin rpy="0 0 0" xyz="1e-06 0.022999 0.023029"/>
+  <parent link="LeftWheel_1"/>
+  <child link="satelitewheel_1"/>
+  <axis xyz="-0.007071 -0.007071 -0.0"/>
+</joint>
+<transmission name="revolute57_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute57">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute57_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute58" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.016283 0.022999 0.016285"/>
+  <parent link="LeftWheel_1"/>
+  <child link="satelitewheel_2"/>
+  <axis xyz="-0.005 -0.007071 -0.005"/>
+</joint>
+<transmission name="revolute58_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute58">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute58_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute59" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.023029 0.022999 1e-06"/>
+  <parent link="LeftWheel_1"/>
+  <child link="satelitewheel_3"/>
+  <axis xyz="0.0 -0.007071 -0.007071"/>
+</joint>
+<transmission name="revolute59_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute59">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute59_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute60" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.016285 0.022999 -0.016283"/>
+  <parent link="LeftWheel_1"/>
+  <child link="satelitewheel_4"/>
+  <axis xyz="0.005 -0.007071 -0.005"/>
+</joint>
+<transmission name="revolute60_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute60">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute60_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute61" type="continuous">
+  <origin rpy="0 0 0" xyz="-2e-06 0.022999 -0.023029"/>
+  <parent link="LeftWheel_1"/>
+  <child link="satelitewheel_5"/>
+  <axis xyz="0.007071 -0.007071 0.0"/>
+</joint>
+<transmission name="revolute61_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute61">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute61_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute62" type="continuous">
+  <origin rpy="0 0 0" xyz="0.016283 0.022999 -0.016285"/>
+  <parent link="LeftWheel_1"/>
+  <child link="satelitewheel_6"/>
+  <axis xyz="0.005 -0.007071 0.005"/>
+</joint>
+<transmission name="revolute62_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute62">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute62_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute63" type="continuous">
+  <origin rpy="0 0 0" xyz="0.023029 0.022999 -1e-06"/>
+  <parent link="LeftWheel_1"/>
+  <child link="satelitewheel_7"/>
+  <axis xyz="-0.0 -0.007071 0.007071"/>
+</joint>
+<transmission name="revolute63_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute63">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute63_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute64" type="continuous">
+  <origin rpy="0 0 0" xyz="0.016285 0.022999 0.016283"/>
+  <parent link="LeftWheel_1"/>
+  <child link="satelitewheel_8"/>
+  <axis xyz="-0.005 -0.007071 0.005"/>
+</joint>
+<transmission name="revolute64_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute64">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute64_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute66" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.016285 0.022999 0.016283"/>
+  <parent link="RightWheel_1"/>
+  <child link="satelitewheel_r_1"/>
+  <axis xyz="-0.005 0.007071 -0.005"/>
+</joint>
+<transmission name="revolute66_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute66">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute66_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute67" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.023029 0.022999 -1e-06"/>
+  <parent link="RightWheel_1"/>
+  <child link="satelitewheel_r_2"/>
+  <axis xyz="0.0 0.007071 -0.007071"/>
+</joint>
+<transmission name="revolute67_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute67">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute67_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute68" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.016283 0.022999 -0.016285"/>
+  <parent link="RightWheel_1"/>
+  <child link="satelitewheel_r_3"/>
+  <axis xyz="0.005 0.007071 -0.005"/>
+</joint>
+<transmission name="revolute68_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute68">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute68_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute69" type="continuous">
+  <origin rpy="0 0 0" xyz="1e-06 0.022999 -0.023029"/>
+  <parent link="RightWheel_1"/>
+  <child link="satelitewheel_r_4"/>
+  <axis xyz="0.007071 0.007071 0.0"/>
+</joint>
+<transmission name="revolute69_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute69">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute69_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute70" type="continuous">
+  <origin rpy="0 0 0" xyz="0.016285 0.022999 -0.016283"/>
+  <parent link="RightWheel_1"/>
+  <child link="satelitewheel_r_5"/>
+  <axis xyz="0.005 0.007071 0.005"/>
+</joint>
+<transmission name="revolute70_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute70">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute70_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute71" type="continuous">
+  <origin rpy="0 0 0" xyz="0.023029 0.022999 1e-06"/>
+  <parent link="RightWheel_1"/>
+  <child link="satelitewheel_r_6"/>
+  <axis xyz="-0.0 0.007071 0.007071"/>
+</joint>
+<transmission name="revolute71_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute71">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute71_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute72" type="continuous">
+  <origin rpy="0 0 0" xyz="0.016283 0.022999 0.016285"/>
+  <parent link="RightWheel_1"/>
+  <child link="satelitewheel_r_7"/>
+  <axis xyz="-0.005 0.007071 0.005"/>
+</joint>
+<transmission name="revolute72_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute72">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute72_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute73" type="continuous">
+  <origin rpy="0 0 0" xyz="-1e-06 0.022999 0.023029"/>
+  <parent link="RightWheel_1"/>
+  <child link="satelitewheel_r_8"/>
+  <axis xyz="-0.007071 0.007071 -0.0"/>
+</joint>
+<transmission name="revolute73_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute73">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute73_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute76" type="continuous">
+  <origin rpy="0 0 0" xyz="-1e-06 -0.022999 0.023029"/>
+  <parent link="LeftWheel_2"/>
+  <child link="satelitewheel_9"/>
+  <axis xyz="0.007071 0.007071 0.0"/>
+</joint>
+<transmission name="revolute76_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute76">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute76_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute77" type="continuous">
+  <origin rpy="0 0 0" xyz="0.016283 -0.022999 0.016285"/>
+  <parent link="LeftWheel_2"/>
+  <child link="satelitewheel_11"/>
+  <axis xyz="0.005 0.007071 -0.005"/>
+</joint>
+<transmission name="revolute77_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute77">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute77_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute78" type="continuous">
+  <origin rpy="0 0 0" xyz="0.023029 -0.022999 1e-06"/>
+  <parent link="LeftWheel_2"/>
+  <child link="satelitewheel_12"/>
+  <axis xyz="0.0 0.007071 -0.007071"/>
+</joint>
+<transmission name="revolute78_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute78">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute78_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute79" type="continuous">
+  <origin rpy="0 0 0" xyz="0.016285 -0.022999 -0.016283"/>
+  <parent link="LeftWheel_2"/>
+  <child link="satelitewheel_10"/>
+  <axis xyz="-0.005 0.007071 -0.005"/>
+</joint>
+<transmission name="revolute79_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute79">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute79_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute80" type="continuous">
+  <origin rpy="0 0 0" xyz="1e-06 -0.022999 -0.023029"/>
+  <parent link="LeftWheel_2"/>
+  <child link="satelitewheel_13"/>
+  <axis xyz="-0.007071 0.007071 -0.0"/>
+</joint>
+<transmission name="revolute80_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute80">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute80_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute81" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.016283 -0.022999 -0.016285"/>
+  <parent link="LeftWheel_2"/>
+  <child link="satelitewheel_16"/>
+  <axis xyz="-0.005 0.007071 0.005"/>
+</joint>
+<transmission name="revolute81_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute81">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute81_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute82" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.023029 -0.022999 -1e-06"/>
+  <parent link="LeftWheel_2"/>
+  <child link="satelitewheel_15"/>
+  <axis xyz="-0.0 0.007071 0.007071"/>
+</joint>
+<transmission name="revolute82_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute82">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute82_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute83" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.016285 -0.022999 0.016283"/>
+  <parent link="LeftWheel_2"/>
+  <child link="satelitewheel_14"/>
+  <axis xyz="0.005 0.007071 0.005"/>
+</joint>
+<transmission name="revolute83_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute83">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute83_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute84" type="continuous">
+  <origin rpy="0 0 0" xyz="0.016285 -0.022999 0.016283"/>
+  <parent link="RightWheel_2"/>
+  <child link="satelitewheel_r_9"/>
+  <axis xyz="0.005 -0.007071 -0.005"/>
+</joint>
+<transmission name="revolute84_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute84">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute84_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute85" type="continuous">
+  <origin rpy="0 0 0" xyz="0.023029 -0.022999 -1e-06"/>
+  <parent link="RightWheel_2"/>
+  <child link="satelitewheel_r_10"/>
+  <axis xyz="0.0 -0.007071 -0.007071"/>
+</joint>
+<transmission name="revolute85_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute85">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute85_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute86" type="continuous">
+  <origin rpy="0 0 0" xyz="0.016283 -0.022999 -0.016285"/>
+  <parent link="RightWheel_2"/>
+  <child link="satelitewheel_r_11"/>
+  <axis xyz="-0.005 -0.007071 -0.005"/>
+</joint>
+<transmission name="revolute86_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute86">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute86_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute87" type="continuous">
+  <origin rpy="0 0 0" xyz="-2e-06 -0.022999 -0.023029"/>
+  <parent link="RightWheel_2"/>
+  <child link="satelitewheel_r_16"/>
+  <axis xyz="-0.007071 -0.007071 -0.0"/>
+</joint>
+<transmission name="revolute87_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute87">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute87_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute88" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.016285 -0.022999 -0.016283"/>
+  <parent link="RightWheel_2"/>
+  <child link="satelitewheel_r_15"/>
+  <axis xyz="-0.005 -0.007071 0.005"/>
+</joint>
+<transmission name="revolute88_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute88">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute88_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute89" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.023029 -0.022999 1e-06"/>
+  <parent link="RightWheel_2"/>
+  <child link="satelitewheel_r_12"/>
+  <axis xyz="-0.0 -0.007071 0.007071"/>
+</joint>
+<transmission name="revolute89_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute89">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute89_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute90" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.016283 -0.022999 0.016285"/>
+  <parent link="RightWheel_2"/>
+  <child link="satelitewheel_r_13"/>
+  <axis xyz="0.005 -0.007071 0.005"/>
+</joint>
+<transmission name="revolute90_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute90">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute90_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="revolute91" type="continuous">
+  <origin rpy="0 0 0" xyz="1e-06 -0.022999 0.023029"/>
+  <parent link="RightWheel_2"/>
+  <child link="satelitewheel_r_14"/>
+  <axis xyz="0.007071 -0.007071 0.0"/>
+</joint>
+<transmission name="revolute91_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolute91">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolute91_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="FB" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.0155 0.0135 -0.007"/>
+  <parent link="Wheel_Motor_2"/>
+  <child link="LeftWheel_1"/>
+  <axis xyz="0.0 -0.01 -0.0"/>
+</joint>
+<transmission name="FB_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="FB">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="FB_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="RB" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.0155 0.0135 -0.007"/>
+  <parent link="Wheel_Motor_1"/>
+  <child link="RightWheel_1"/>
+  <axis xyz="0.0 -0.01 -0.0"/>
+</joint>
+<transmission name="RB_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="RB">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="RB_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="LF" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.0155 -0.0135 -0.007"/>
+  <parent link="Wheel_Motor_3"/>
+  <child link="RightWheel_2"/>
+  <axis xyz="-0.0 0.01 -0.0"/>
+</joint>
+<transmission name="LF_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="LF">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="LF_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="LB" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0155 -0.0135 -0.007"/>
+  <parent link="Wheel_Motor_4"/>
+  <child link="LeftWheel_2"/>
+  <axis xyz="-0.0 0.01 -0.0"/>
+</joint>
+<transmission name="LB_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="LB">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="LB_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="rigid96" type="fixed">
+  <origin rpy="0 0 0" xyz="0.024873 0.0186 0.008015"/>
+  <parent link="carboat_3_1"/>
+  <child link="Servo2_1"/>
+</joint>
+<transmission name="rigid96_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rigid96">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rigid96_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="Head_motor" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.01545 0.0154 0.005"/>
+  <parent link="Servo2_1"/>
+  <child link="Gear_Pan_Neck_1"/>
+  <axis xyz="-0.0 0.01 0.0"/>
+</joint>
+<transmission name="Head_motor_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Head_motor">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Head_motor_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<gazebo>
+  <plugin filename="libgazebo_ros_control.so" name="control"/>
+</gazebo>
+</robot>

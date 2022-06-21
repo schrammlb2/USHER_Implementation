@@ -1,0 +1,74 @@
+Evaluating  ['../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-20-08.txt', '../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-20-39.txt'] ['../real_robot_data/Jan14_2020_Control_Signals/control_take07.csg', '../real_robot_data/Jan14_2020_Control_Signals/control_take08.csg']
+factor = 0.1
+Reading ground truth data and control signals...
+Data read successfully.
+Initial Guess:  [0.07630829 0.77991879 0.43840923 0.72346518]
+Initial Loss:  [15.35152355]
+Final coefficients:  [0.         0.52370729 0.         0.        ]
+Final Loss:  [216.35052782]
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =            4     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  1.53515D+01    |proj g|=  1.09338D+00
+
+At iterate    1    f=  1.50272D+01    |proj g|=  1.36094D+00
+
+At iterate    2    f=  1.49460D+01    |proj g|=  6.89107D-01
+
+At iterate    3    f=  1.49214D+01    |proj g|=  3.91472D-01
+
+At iterate    4    f=  1.48886D+01    |proj g|=  5.29616D-01
+
+At iterate    5    f=  1.47805D+01    |proj g|=  8.83941D-01
+
+At iterate    6    f=  1.47641D+01    |proj g|=  6.72405D-01
+
+At iterate    7    f=  1.47235D+01    |proj g|=  4.96945D-01
+
+At iterate    8    f=  1.46613D+01    |proj g|=  4.64552D-01
+
+At iterate    9    f=  1.46552D+01    |proj g|=  5.84445D-01
+
+At iterate   10    f=  1.46474D+01    |proj g|=  1.11212D-01
+
+At iterate   11    f=  1.46463D+01    |proj g|=  1.30455D-01
+
+At iterate   12    f=  1.46435D+01    |proj g|=  2.18014D-01
+
+At iterate   13    f=  1.46394D+01    |proj g|=  3.90100D-01
+
+At iterate   14    f=  1.46150D+01    |proj g|=  3.95995D-01
+
+At iterate   15    f=  1.45988D+01    |proj g|=  6.13712D-02
+
+At iterate   16    f=  1.45988D+01    |proj g|=  1.60746D-02
+
+At iterate   17    f=  1.45988D+01    |proj g|=  1.60050D-02
+
+At iterate   18    f=  1.45988D+01    |proj g|=  1.60009D-02
+
+At iterate   19    f=  1.45988D+01    |proj g|=  1.60016D-02
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+    4     19     69     22     0     3   1.600D-02   1.460D+01
+  F =   14.598818358042754     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             

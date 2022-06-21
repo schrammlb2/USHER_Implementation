@@ -1,0 +1,64 @@
+Evaluating  ['../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-24-05.txt', '../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-25-16.txt'] ['../real_robot_data/Jan14_2020_Control_Signals/control_take09.csg', '../real_robot_data/Jan14_2020_Control_Signals/control_take10.csg']
+factor = 0.1
+Reading ground truth data and control signals...
+Data read successfully.
+Initial Guess:  [0.07630829 0.77991879 0.43840923 0.72346518]
+Initial Loss:  [19.79667224]
+Final coefficients:  [0.1574934 0.        0.        0.       ]
+Final Loss:  [581.14744789]
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =            4     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  1.97967D+01    |proj g|=  1.23662D+00
+
+At iterate    1    f=  1.85314D+01    |proj g|=  5.67215D-01
+
+At iterate    2    f=  1.84864D+01    |proj g|=  4.62077D-01
+
+At iterate    3    f=  1.84468D+01    |proj g|=  4.07729D-01
+
+At iterate    4    f=  1.83530D+01    |proj g|=  8.32016D-01
+
+At iterate    5    f=  1.82111D+01    |proj g|=  1.22612D+00
+  ys=-1.844E-02  -gs= 1.468E-01 BFGS update SKIPPED
+
+At iterate    6    f=  1.80933D+01    |proj g|=  9.85530D-02
+
+At iterate    7    f=  1.80918D+01    |proj g|=  2.64345D-02
+
+At iterate    8    f=  1.80912D+01    |proj g|=  6.44235D-02
+
+At iterate    9    f=  1.80896D+01    |proj g|=  6.36696D-02
+  ys=-2.775E-06  -gs= 1.640E-03 BFGS update SKIPPED
+
+At iterate   10    f=  1.80895D+01    |proj g|=  2.04750D-02
+
+At iterate   11    f=  1.80895D+01    |proj g|=  2.13621D-02
+
+At iterate   12    f=  1.80895D+01    |proj g|=  2.04025D-02
+
+At iterate   13    f=  1.80895D+01    |proj g|=  5.71845D-03
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+    4     13     35     15     2     3   5.718D-03   1.809D+01
+  F =   18.089505654286903     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             

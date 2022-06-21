@@ -1,0 +1,194 @@
+<?xml version="1.0" ?>
+<robot name="simple_cuboid">
+  <material name="blue">
+    <color rgba="0 0 0.8 1"/>
+  </material>
+
+  <material name="white">
+    <color rgba="1 1 1 1"/>
+  </material>
+
+  <material name="black">
+    <color rgba="0 0 0 1"/>
+  </material>
+
+  <material name="green">
+    <color rgba="0 0.8 0 1"/>
+  </material>
+
+  <material name="red">
+    <color rgba="0.8 0 0 1"/>
+  </material>
+
+  <material name="yellow">
+    <color rgba="0.8 0.8 0 1"/>
+  </material>
+
+<link name="base_link">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0 0.0 0.06"/>
+    <mass value="32.93232"/>
+    <inertia ixx="0.184695" ixy="0.0" ixz="0.0" iyy="0.102924" iyz="0.0" izz="0.208582"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="bin_stl/base_link_m-binary.stl"/>
+    </geometry>
+    <material name="white"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="bin_stl/base_link_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="BL_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.016000000000000014 1.3877787807814457e-17 -6.938893903907228e-18"/>
+    <mass value="0.7102512671235804"/>
+    <inertia ixx="0.00032" ixy="0.0" ixz="0.0" iyy="0.00022" iyz="0.0" izz="0.00022"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.094 -0.1 -0.015"/>
+    <geometry>
+      <mesh filename="bin_stl/BL_1_m-binary.stl"/>
+    </geometry>
+    <material name="yellow"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.094 -0.1 -0.015"/>
+    <geometry>
+      <mesh filename="bin_stl/BL_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="BR_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.015999999999999986 1.3877787807814457e-17 -6.938893903907228e-18"/>
+    <mass value="0.7102512671235804"/>
+    <inertia ixx="0.00032" ixy="0.0" ixz="0.0" iyy="0.00022" iyz="0.0" izz="0.00022"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.094 -0.1 -0.015"/>
+    <geometry>
+      <mesh filename="bin_stl/BR_1_m-binary.stl"/>
+    </geometry>
+    <material name="red"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.094 -0.1 -0.015"/>
+    <geometry>
+      <mesh filename="bin_stl/BR_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="FR_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.015999999999999986 2.7755575615628914e-17 2.2551405187698492e-17"/>
+    <mass value="0.7102512671235804"/>
+    <inertia ixx="0.00032" ixy="0.0" ixz="0.0" iyy="0.00022" iyz="0.0" izz="0.00022"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.094 0.1 -0.015"/>
+    <geometry>
+      <mesh filename="bin_stl/FR_1_m-binary.stl"/>
+    </geometry>
+    <material name="green"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.094 0.1 -0.015"/>
+    <geometry>
+      <mesh filename="bin_stl/FR_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="FL_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.016000000000000014 2.7755575615628914e-17 1.9081958235744878e-17"/>
+    <mass value="0.7102512671235804"/>
+    <inertia ixx="0.00032" ixy="-0.0" ixz="-0.0" iyy="0.00022" iyz="0.0" izz="0.00022"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.094 0.1 -0.015"/>
+    <geometry>
+      <mesh filename="bin_stl/FL_1_m-binary.stl"/>
+    </geometry>
+    <material name="blue"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.094 0.1 -0.015"/>
+    <geometry>
+      <mesh filename="bin_stl/FL_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<joint name="BL" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.094 0.1 0.015"/>
+  <parent link="base_link"/>
+  <child link="BL_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+<transmission name="BL_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="BL">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="BL_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="BR" type="continuous">
+  <origin rpy="0 0 0" xyz="0.094 0.1 0.015"/>
+  <parent link="base_link"/>
+  <child link="BR_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+<transmission name="BR_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="BR">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="BR_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="FR" type="continuous">
+  <origin rpy="0 0 0" xyz="0.094 -0.1 0.015"/>
+  <parent link="base_link"/>
+  <child link="FR_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+<transmission name="FR_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="FR">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="FR_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="FL" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.094 -0.1 0.015"/>
+  <parent link="base_link"/>
+  <child link="FL_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+<transmission name="FL_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="FL">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="FL_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<gazebo>
+  <plugin filename="libgazebo_ros_control.so" name="control"/>
+</gazebo>
+</robot>

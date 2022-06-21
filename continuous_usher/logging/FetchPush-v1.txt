@@ -1,0 +1,20 @@
+
+running FetchPush-v1, 0.0 noise, 2-goal ratio with delta-probability
+
+running FetchPush-v1, 0.0 noise, 1-goal
+
+running FetchPush-v1, 0.0 noise, 2-goal ratio with delta-probability
+
+running FetchPush-v1, 0.0 noise, 1-goal
+
+running FetchPush-v1, 0.0 noise, 2-goal ratio with delta-probability
+
+running FetchPush-v1, 0.0 noise, 1-goal
+
+running FetchPush-v1, 0.0 noise, 2-goal ratio with delta-probability
+
+running FetchPush-v1, 0.0 noise, 1-goal
+
+running FetchPush-v1, 0.0 noise, 2-goal ratio with delta-probability
+
+running FetchPush-v1, 0.0 noise, 1-goal

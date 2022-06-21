@@ -1,0 +1,104 @@
+Evaluating  ['../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-11-38.txt'] ['../real_robot_data/Jan14_2020_Control_Signals/control_take01.csg']
+Reading ground truth data and control signals...
+Data read successfully.
+Initial Guess:  [1.03813564 1.37132522 1.21575983 1.34673923]
+Initial Loss:  [45.80084832]
+Optimization terminated successfully.
+         Current function value: 22.604395
+         Iterations: 563
+         Function evaluations: 930
+Final coefficients(raw_in):  [-0.85826898  0.26869968 -1.82226409 -5.42181239]
+Final coefficients:  [0.59540226 1.1335473  0.27832484 0.00879937]
+[22.60439511]
+Running time for CSG 1: 102.19104218482971
+Evaluating  ['../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-20-08.txt'] ['../real_robot_data/Jan14_2020_Control_Signals/control_take07.csg']
+Reading ground truth data and control signals...
+Data read successfully.
+Initial Guess:  [1.03813564 1.37132522 1.21575983 1.34673923]
+Initial Loss:  [51.63105693]
+Optimization terminated successfully.
+         Current function value: 16.537108
+         Iterations: 860
+         Function evaluations: 1423
+Final coefficients(raw_in):  [-2.45065201 -0.45783621 -1.38663065 -2.12720424]
+Final coefficients:  [0.15878176 0.77499852 0.3998924  0.21296139]
+[16.53710836]
+Running time for CSG 7: 149.32730865478516
+Evaluating  ['../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-24-05.txt'] ['../real_robot_data/Jan14_2020_Control_Signals/control_take09.csg']
+Reading ground truth data and control signals...
+Data read successfully.
+Initial Guess:  [1.03813564 1.37132522 1.21575983 1.34673923]
+Initial Loss:  [75.75130625]
+Optimization terminated successfully.
+         Current function value: 25.082737
+         Iterations: 415
+         Function evaluations: 692
+Final coefficients(raw_in):  [-2.19893093 -1.63551142 -0.66443352 -5.53591067]
+Final coefficients:  [0.19969307 0.3261535  0.67948878 0.00785427]
+[25.082737]
+Running time for CSG 9: 69.10768008232117
+Evaluating  ['../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-27-31.txt'] ['../real_robot_data/Jan14_2020_Control_Signals/control_take11.csg']
+Reading ground truth data and control signals...
+Data read successfully.
+Initial Guess:  [1.03813564 1.37132522 1.21575983 1.34673923]
+Initial Loss:  [58.05623626]
+Optimization terminated successfully.
+         Current function value: 29.290098
+         Iterations: 347
+         Function evaluations: 586
+Final coefficients(raw_in):  [-6.24528838e-01 -3.88165592e-03 -1.33691901e+01 -2.88996270e+00]
+Final coefficients:  [6.97504280e-01 9.98059174e-01 3.12509943e-06 1.05303958e-01]
+[29.2900981]
+Running time for CSG 11: 62.14319705963135
+Evaluating  ['../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-39-36.txt'] ['../real_robot_data/Jan14_2020_Control_Signals/control_take21.csg']
+Reading ground truth data and control signals...
+Data read successfully.
+Initial Guess:  [1.03813564 1.37132522 1.21575983 1.34673923]
+Initial Loss:  [70.92908512]
+Optimization terminated successfully.
+         Current function value: 9.289259
+         Iterations: 499
+         Function evaluations: 828
+Final coefficients(raw_in):  [ -1.49732385  -0.30987447  -1.33119162 -72.50985071]
+Final coefficients:  [3.65650003e-01 8.46290761e-01 4.17924652e-01 6.46252075e-32]
+[9.28925881]
+Running time for CSG 21: 80.36786150932312
+Evaluating  ['../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-42-29.txt'] ['../real_robot_data/Jan14_2020_Control_Signals/control_take25.csg']
+Reading ground truth data and control signals...
+Data read successfully.
+Initial Guess:  [1.03813564 1.37132522 1.21575983 1.34673923]
+Initial Loss:  [89.27255655]
+Optimization terminated successfully.
+         Current function value: 15.755125
+         Iterations: 704
+         Function evaluations: 1143
+Final coefficients(raw_in):  [-2.71540008 -1.02981361 -1.43312752 -5.54850428]
+Final coefficients:  [0.12414145 0.52624048 0.3852237  0.00775635]
+[15.75512539]
+Running time for CSG 25: 107.43834471702576
+Evaluating  ['../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-44-37.txt'] ['../real_robot_data/Jan14_2020_Control_Signals/control_take27.csg']
+Reading ground truth data and control signals...
+Data read successfully.
+Initial Guess:  [1.03813564 1.37132522 1.21575983 1.34673923]
+Initial Loss:  [107.38761042]
+Optimization terminated successfully.
+         Current function value: 29.094354
+         Iterations: 707
+         Function evaluations: 1225
+Final coefficients(raw_in):  [ 2.18346705e-01  3.20488604e+02 -3.80118159e+00 -3.30489337e+01]
+Final coefficients:  [1.10874167e+00 2.00000000e+00 4.37119924e-02 8.87279505e-15]
+[29.0943545]
+Running time for CSG 27: 114.12291407585144
+Evaluating  ['../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-49-55.txt'] ['../real_robot_data/Jan14_2020_Control_Signals/control_take33.csg']
+Reading ground truth data and control signals...
+Data read successfully.
+Initial Guess:  [1.03813564 1.37132522 1.21575983 1.34673923]
+Initial Loss:  [120.98328764]
+Optimization terminated successfully.
+         Current function value: 33.092320
+         Iterations: 636
+         Function evaluations: 1112
+Final coefficients(raw_in):  [ -1.43589101   0.4467358  -48.09258838 -32.79336761]
+Final coefficients:  [3.84364912e-01 1.21972572e+00 2.59826977e-21 1.14564852e-14]
+[33.09232015]
+Running time for CSG 33: 104.95506310462952

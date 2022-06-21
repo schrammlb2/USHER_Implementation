@@ -1,0 +1,95 @@
+Evaluating  ['../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-11-38.txt', '../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-14-15.txt'] ['../real_robot_data/Jan14_2020_Control_Signals/control_take01.csg', '../real_robot_data/Jan14_2020_Control_Signals/control_take02.csg']
+Reading ground truth data and control signals...
+Data read successfully.
+Initial Guess:  [1.03813564 1.37132522 1.21575983 1.34673923]
+Initial Loss:  [81.45559244]
+Optimization terminated successfully.
+         Current function value: 48.860484
+         Iterations: 202
+         Function evaluations: 356
+Final coefficients(raw_in):  [ 0.72028753  1.96574978 -1.81263732 -3.62765392]
+Final coefficients:  [1.34534066 1.75430773 0.28063937 0.05178068]
+Final loss:  [48.86048391]
+Running time for CSG 1: 74.18008375167847
+Evaluating  ['../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-20-08.txt', '../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-20-39.txt'] ['../real_robot_data/Jan14_2020_Control_Signals/control_take07.csg', '../real_robot_data/Jan14_2020_Control_Signals/control_take08.csg']
+Reading ground truth data and control signals...
+Data read successfully.
+Initial Guess:  [1.03813564 1.37132522 1.21575983 1.34673923]
+Initial Loss:  [98.4747935]
+Optimization terminated successfully.
+         Current function value: 42.160878
+         Iterations: 406
+         Function evaluations: 688
+Final coefficients(raw_in):  [-1.34796681e+00 -1.76699422e-01 -2.04617318e+00 -8.81011087e+02]
+Final coefficients:  [0.41240595 0.91187945 0.22887926 0.        ]
+Final loss:  [42.16087796]
+Running time for CSG 7: 135.14588809013367
+Evaluating  ['../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-24-05.txt', '../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-25-16.txt'] ['../real_robot_data/Jan14_2020_Control_Signals/control_take09.csg', '../real_robot_data/Jan14_2020_Control_Signals/control_take10.csg']
+Reading ground truth data and control signals...
+Data read successfully.
+Initial Guess:  [1.03813564 1.37132522 1.21575983 1.34673923]
+Initial Loss:  [153.20187894]
+Warning: Maximum number of function evaluations has been exceeded.
+Final coefficients(raw_in):  [-2.76836239 -2.60181376 -0.48381225 -4.3218479 ]
+Final coefficients:  [0.1181159  0.13804356 0.76270464 0.02620281]
+Final loss:  [45.09512651]
+Running time for CSG 9: 149.90574741363525
+Evaluating  ['../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-27-31.txt', '../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-28-09.txt'] ['../real_robot_data/Jan14_2020_Control_Signals/control_take11.csg', '../real_robot_data/Jan14_2020_Control_Signals/control_take12.csg']
+Reading ground truth data and control signals...
+Data read successfully.
+Initial Guess:  [1.03813564 1.37132522 1.21575983 1.34673923]
+Initial Loss:  [115.11023982]
+Optimization terminated successfully.
+         Current function value: 63.447437
+         Iterations: 446
+         Function evaluations: 740
+Final coefficients(raw_in):  [-0.79689966 -0.07312163 -2.48591324 -2.14450527]
+Final coefficients:  [0.6213782  0.96345547 0.15370327 0.2096916 ]
+Final loss:  [63.44743699]
+Running time for CSG 11: 144.81022310256958
+Evaluating  ['../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-39-36.txt', '../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-40-02.txt'] ['../real_robot_data/Jan14_2020_Control_Signals/control_take21.csg', '../real_robot_data/Jan14_2020_Control_Signals/control_take22.csg']
+Reading ground truth data and control signals...
+Data read successfully.
+Initial Guess:  [1.03813564 1.37132522 1.21575983 1.34673923]
+Initial Loss:  [144.36267959]
+Optimization terminated successfully.
+         Current function value: 20.282497
+         Iterations: 310
+         Function evaluations: 506
+Final coefficients(raw_in):  [ -1.49400924  -0.37029127  -1.27013022 -14.00388658]
+Final coefficients:  [3.66641450e-01 8.16941286e-01 4.38469922e-01 1.65660500e-06]
+Final loss:  [20.28249736]
+Running time for CSG 21: 106.48466348648071
+Evaluating  ['../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-42-29.txt', '../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-42-57.txt'] ['../real_robot_data/Jan14_2020_Control_Signals/control_take25.csg', '../real_robot_data/Jan14_2020_Control_Signals/control_take26.csg']
+Reading ground truth data and control signals...
+Data read successfully.
+Initial Guess:  [1.03813564 1.37132522 1.21575983 1.34673923]
+Initial Loss:  [164.96510063]
+Optimization terminated successfully.
+         Current function value: 56.193653
+         Iterations: 451
+         Function evaluations: 741
+Final coefficients(raw_in):  [-2.92537943 -0.9170329  -1.3611136  -2.58063196]
+Final coefficients:  [0.10182627 0.57112569 0.40811875 0.14079073]
+Final loss:  [56.19365337]
+Running time for CSG 25: 164.82295489311218
+Evaluating  ['../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-44-37.txt', '../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-45-14.txt'] ['../real_robot_data/Jan14_2020_Control_Signals/control_take27.csg', '../real_robot_data/Jan14_2020_Control_Signals/control_take28.csg']
+Reading ground truth data and control signals...
+Data read successfully.
+Initial Guess:  [1.03813564 1.37132522 1.21575983 1.34673923]
+Initial Loss:  [215.15622558]
+Warning: Maximum number of function evaluations has been exceeded.
+Final coefficients(raw_in):  [ 1.94037218e-01  4.40193825e+02 -3.81264530e+00 -3.03955721e+01]
+Final coefficients:  [1.09671535e+00 2.00000000e+00 4.32245203e-02 1.26008767e-13]
+Final loss:  [59.17588755]
+Running time for CSG 27: 162.12045431137085
+Evaluating  ['../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-49-55.txt', '../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-50-34.txt'] ['../real_robot_data/Jan14_2020_Control_Signals/control_take33.csg', '../real_robot_data/Jan14_2020_Control_Signals/control_take34.csg']
+Reading ground truth data and control signals...
+Data read successfully.
+Initial Guess:  [1.03813564 1.37132522 1.21575983 1.34673923]
+Initial Loss:  [236.04257988]
+Warning: Maximum number of function evaluations has been exceeded.
+Final coefficients(raw_in):  [ -4.13448008  -0.50071701  -1.70300795 -42.21968065]
+Final coefficients:  [3.15173508e-02 7.54744368e-01 3.08145634e-01 9.23114686e-19]
+Final loss:  [51.5413195]
+Running time for CSG 33: 158.1745958328247

@@ -1,0 +1,33 @@
+Current situation
+	Updates on the algorithm from when we last talked
+		No more requirement to use different future-step sampling
+			Previously, I had required using a geometric distribution over future steps.
+			That's no longer necessary. I can now use the original uniform distribution over future states that HER uses.
+			The new update equation for P is 
+				P(GR | s0, a0, Gpi) = E_{s1, a1, T}[1(GR == G(s1))/T + P(GR | s1, s1, Gpi)(T-1)/T]
+					where T is the number of remaining steps in the trajectory, and GR is sampled using HER
+
+		No unsoundness introduced by probability using its own value to importance sample
+			The new way of training the probability distribution forgoes importance sampling and just directly estimates the probability that we will pick a particular future goal
+
+		No additional network, and no additional backprop pass
+			All the previous methods I had for training the importance sampling ratio required an additional network, or an additional backprop pass. 
+			I found a solution that uses the same network body with two different final layers for the Q value and the probability distribution. 
+			Both operate on the same data, so they can be trained together with a single backward pass, meaning that there is no performance loss as compared to standard HER. 
+
+			The new network is updated as 
+			Q0 = E[P0/P1(R + gamma*Q1)]
+			Use two-headed network
+				(s, a, GR, Gpi) -> (Q, P)
+
+	I'm sorry that this took so long to get run. Model-free methods can be a pain, and it took me a while to find a set of tricks that lead to convergence
+		Important tricks
+			Initialize P to be small, map network output so it's strictly positive
+				P must be greater than 0
+				Initialize small bc high probability values will be updated more frequently -- 
+					If a weight is not updated frequently, it will
+						1) stay close to initialization
+						2) be small probability
+			Slightly offset by constant c
+				Stability purposes
+				We use .02 for this, but didn't optimize it too hard, other values may be better

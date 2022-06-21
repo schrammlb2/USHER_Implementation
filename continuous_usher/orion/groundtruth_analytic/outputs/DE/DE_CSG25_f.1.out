@@ -1,0 +1,58 @@
+Evaluating  ['../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-42-29.txt', '../camera_calibration/outputs/fixed_angle_dat_info/2020-01-14_15-42-57.txt'] ['../real_robot_data/Jan14_2020_Control_Signals/control_take25.csg', '../real_robot_data/Jan14_2020_Control_Signals/control_take26.csg']
+factor = 0.1
+Reading ground truth data and control signals...
+Data read successfully.
+Initial Guess:  [0.07630829 0.77991879 0.43840923 0.72346518]
+Initial Loss:  [17.74699335]
+Final coefficients:  [0.         0.         0.01380419 0.        ]
+Final Loss:  [436.28603534]
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =            4     M =           10
+
+At X0         0 variables are exactly at the bounds
+
+At iterate    0    f=  1.77470D+01    |proj g|=  1.27815D+00
+
+At iterate    1    f=  1.70171D+01    |proj g|=  9.09910D-01
+
+At iterate    2    f=  1.70120D+01    |proj g|=  6.16136D-01
+
+At iterate    3    f=  1.69577D+01    |proj g|=  9.22602D-01
+
+At iterate    4    f=  1.67287D+01    |proj g|=  8.31597D-01
+
+At iterate    5    f=  1.66020D+01    |proj g|=  1.38873D-01
+
+At iterate    6    f=  1.66011D+01    |proj g|=  3.82283D-02
+
+At iterate    7    f=  1.66010D+01    |proj g|=  6.97753D-03
+
+At iterate    8    f=  1.66010D+01    |proj g|=  3.80105D-02
+
+At iterate    9    f=  1.66010D+01    |proj g|=  6.85638D-03
+
+At iterate   10    f=  1.66010D+01    |proj g|=  6.85532D-03
+
+At iterate   11    f=  1.66010D+01    |proj g|=  6.85390D-03
+
+           * * *
+
+Tit   = total number of iterations
+Tnf   = total number of function evaluations
+Tnint = total number of segments explored during Cauchy searches
+Skip  = number of BFGS updates skipped
+Nact  = number of active bounds at final generalized Cauchy point
+Projg = norm of the final projected gradient
+F     = final function value
+
+           * * *
+
+   N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
+    4     11     48     16     0     4   6.854D-03   1.660D+01
+  F =   16.600977046660574     
+
+CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH             
