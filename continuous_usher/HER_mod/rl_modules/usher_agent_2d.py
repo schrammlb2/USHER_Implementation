@@ -167,7 +167,8 @@ class ValueEstimator:
 
     else: 
         true_ratio = 1
-        critic_loss = (target_q_value - q0).pow(2).mean() 
+        critic_loss = (target_q_value - q0).pow(2).mean() + 0*(target_p_value - p0).pow(2).mean()
+                                                            #Necessary so gradient value exists for p-head and does not cause error
                                                         
     return critic_loss
 

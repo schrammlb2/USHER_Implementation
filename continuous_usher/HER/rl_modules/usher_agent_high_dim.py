@@ -339,7 +339,10 @@ class ddpg_agent:
             critic_loss = critic_loss + (true_indep_goal_ratio*her_used*((p_indep_goal).pow(2)- (t-1)/t*p_indep_goal*p_indep_goal_next)).mean() 
             critic_loss = critic_loss - 2*(realized_p/t).mean()/100
         else: 
-            critic_loss = (target_q_value - q0).pow(2).mean() 
+            critic_loss = (target_q_value - q0).pow(2).mean() + 0*(target_p_value - p0).pow(2).mean()
+                                                                #Necessary so gradient value exists for p-head and does not cause error
+                                                        
+
 
         # the actor loss
         self.global_count += 1
