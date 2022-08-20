@@ -53,7 +53,7 @@ class actor(nn.Module):
 
 
 class critic(nn.Module):
-    def __init__(self, env_params):
+    def __init__(self, env_params, offset=0):
         super(critic, self).__init__()
         self.goal_dim = env_params['goal']
         self.max_action = env_params['action_max']
@@ -61,13 +61,14 @@ class critic(nn.Module):
         self.fc2 = nn.Linear(256, 256)
         self.fc3 = nn.Linear(256, 256)
         self.q_out = nn.Linear(256, 1)
+        self.offset = offset
 
     def forward(self, x, actions):
         x = torch.cat([x, x[...,-self.goal_dim:], actions / self.max_action], dim=1)
         x = F.relu(self.fc1(x))
         x = F.relu(self.fc2(x))
         x = F.relu(self.fc3(x))
-        q_value = self.q_out(x)
+        q_value = self.q_out(x) + self.offset
 
         return q_value
 
@@ -165,7 +166,7 @@ class sac_actor(nn.Module):
 
 
 class usher_critic(nn.Module):
-    def __init__(self, env_params):
+    def __init__(self, env_params, offset=0):
         super(usher_critic, self).__init__()
         self.env_params = env_params
         self.max_action = env_params['action_max']
@@ -175,6 +176,7 @@ class usher_critic(nn.Module):
         self.fc2 = nn.Linear(256, 256)
         self.fc3 = nn.Linear(256, 256)
         self.q_out = nn.Linear(256, 1)
+        self.offset = offset
 
         self.her_goal_range = (env_params['obs'] , env_params['obs'] + env_params['goal'])
 
@@ -199,13 +201,13 @@ class usher_critic(nn.Module):
         x = F.relu(self.fc3(x))
         q_value = self.q_out(x)
 
-        return q_value + 10.
+        return q_value + self.offset
 
 # def constrain_output(p):
 #     pass
 
 class T_conditioned_ratio_critic(nn.Module):
-    def __init__(self, env_params):
+    def __init__(self, env_params, offset=0):
         super(T_conditioned_ratio_critic, self).__init__()
         self.env_params = env_params
         self.max_action = env_params['action_max']
@@ -218,6 +220,7 @@ class T_conditioned_ratio_critic(nn.Module):
         self.fc3 = nn.Linear(256, 256)
         self.q_out = nn.Linear(256, 1)
         self.p_out = nn.Linear(256, 1)
+        self.offset=offset
 
     def forward(self, x, T, actions, return_p=False):
         mult_val = torch.ones_like(x)
@@ -227,7 +230,7 @@ class T_conditioned_ratio_critic(nn.Module):
         x = F.relu(self.fc1(x))
         x = F.relu(self.fc2(x))
         x = F.relu(self.fc3(x))
-        q_value = self.q_out(x) #+ 50
+        q_value = self.q_out(x) + self.offset
         if return_p: 
             #exponentiate p to ensure it's non-negative
             exp = .5 #exponent for p

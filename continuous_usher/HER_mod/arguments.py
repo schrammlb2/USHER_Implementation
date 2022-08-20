@@ -47,6 +47,8 @@ def get_args():
     parser.add_argument('--ratio-offset', type=float, default=0.1, help='offset of ratio used in correcting HER values')
     parser.add_argument('--ratio-clip', type=float, default=1000., help='clip of ratio used in correcting HER values')
     parser.add_argument('--delta-agent', action='store_true', help='clip of ratio used in correcting HER values')
+    parser.add_argument('--archer', action='store_true', help='Use ARCHER to weight rewards')
+    parser.add_argument('--positive-rewards', action='store_true', help='Use rewards in the range[0,1] instead [-1, 0]')
 
 
     args = parser.parse_args()

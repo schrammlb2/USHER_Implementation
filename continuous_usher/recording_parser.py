@@ -10,7 +10,8 @@ import matplotlib.colors as mcolors
 ci = lambda x, z=2: (np.mean(x) - z*np.std(x)/len(x)**.5, np.mean(x) + z*np.std(x)/len(x)**.5 )
 err_bar = lambda x, z=2: z*np.std(x)/len(x)**.5
 
-loc = "logging/recordings/"
+# loc = "logging/recordings/"
+loc = "logging/recordings_failed_attempt_with_archer/"
 
 def format_method(inpt):
 	if inpt == "q-learning": return "DDPG"
@@ -85,14 +86,36 @@ def parse_recording(env):
 		agents[agent_name] = {key: get_stats(agents[agent_name][key]) for key in agents[agent_name].keys()}
 	return agents
 
+def x_axis_label(name, epochs):
+	num_rollouts=2
+	return_name="Episodes"
+	if "Fetch" in name:
+		num_agents=6
+		num_cycles=50
+	elif "StandardCarGridworld" in name:
+		num_agents=1
+		num_cycles=500
+	elif "RedLight" in name:
+		num_agents=1
+		num_cycles=200
+	elif "TorusFreeze" in name:
+		num_agents=1
+		num_cycles=500
+	else: 
+		assert False, f"Environment name `{name}` not handled for renamimg method"
+
+	return return_name, [num_agents*num_cycles*num_rollouts*(epoch+1) for epoch in epochs]
+
 def line_plot(experiment_dict, name="Environment"):
 	color_list = ["red", "green", "blue", "purple", "brown"]
 	def color_map(x):
-		if "usher" in x or "USHER" in x: 
+		if "usher" in x.lower(): 
 			return "green"
-		elif "her" in x or "HER" in x: 
+		elif "archer" in x.lower():
+			return "black"
+		elif "her" in x.lower(): 
 			return "red"
-		elif "q-learning" in x or "DDPG" == x:
+		elif "q-learning" in x.lower() or "ddpg" in x.lower():
 			return "blue"
 		else: 
 			return "purple"
@@ -113,10 +136,13 @@ def line_plot(experiment_dict, name="Environment"):
 			if method == "delta-ddpg" and  (metric == "values" or metric == "biases"): 
 				continue
 			color=color_map(method)
-			plt.plot(epochs, mean_vals, color=color,label=format_method(method))
-			plt.fill_between(epochs, lower_ci_list, upper_ci_list, color=color, alpha=.1)
+			new_name, x_values = x_axis_label(name, epochs)
+			# plt.plot(epochs, mean_vals, color=color,label=format_method(method))
+			plt.plot(x_values, mean_vals, color=color,label=format_method(method))
+			plt.fill_between(x_values, lower_ci_list, upper_ci_list, color=color, alpha=.1)
 
-		plt.xlabel("Epoch")
+		# plt.xlabel("Epoch")
+		plt.xlabel(new_name)
 		plt.ylabel(format_metric(metric))
 		env_title = format_title(name)
 		plt.title(f"{env_title} Performance")

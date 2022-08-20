@@ -40,9 +40,12 @@ class ValueEstimator:
 
     self.double_q = False
 
-    self.critic_1 = critic(env_params)
+    offset = 1/(1-args.gamma) if args.positive_rewards else 0
+    # offset = -1/(args.gamma)
+    # offset=0
+    self.critic_1 = critic(env_params, offset = offset)
     sync_networks(self.critic_1)
-    self.critic_target_1 = critic(env_params)
+    self.critic_target_1 = critic(env_params, offset = offset)
     self.critic_target_1.load_state_dict(self.critic_1.state_dict())    
     if self.double_q: 
         self.critic_2 = critic(env_params)
@@ -93,6 +96,16 @@ class ValueEstimator:
         t = torch.tensor(transitions['t_remaining'], dtype=torch.float32) 
         her_used = torch.tensor(transitions['her_used'], dtype=torch.float32) 
         map_t = lambda t: -1 + 2*t/self.env_params['max_timesteps']
+
+        ARCHER_h_coeff = 2
+        ARCHER_r_coeff = 1
+        if self.args.positive_rewards: 
+            r_tensor += 1
+        if self.args.archer:
+            r_tensor *= (ARCHER_r_coeff*(1-her_used.unsqueeze(-1)) + ARCHER_h_coeff*her_used.unsqueeze(-1))
+        # if self.args.positive_rewards: 
+        #     r_tensor -= 1
+
         # do the normalization
         # concatenate the stuffs
         actions_next = actor(inputs_next_norm_tensor, deterministic=True)
@@ -103,6 +116,8 @@ class ValueEstimator:
         # clip the q value
         clip_return = 1 / (1 - self.args.gamma)
 
+        # r_tensor -= 1
+
         q_next_value, p_next_value = self.critic_target_1(inputs_next_norm_tensor_pol, map_t(t-1), actions_next, return_p=True)
         q_next_value = q_next_value.detach()
         if self.args.non_terminal_goals: 
@@ -111,7 +126,12 @@ class ValueEstimator:
             target_q_value = r_tensor + self.args.gamma * q_next_value * (-r_tensor)
         target_q_value = target_q_value.detach()
 
-        target_q_value = torch.clamp(target_q_value, -clip_return, 0)
+        # target_q_value = torch.clamp(target_q_value, -clip_return, 0)
+        # if self.args.positive_rewards: 
+        #     target_q_value = torch.clamp(target_q_value, 0, clip_return*ARCHER_h_coeff)
+        # else:
+        #     target_q_value = torch.clamp(target_q_value, -clip_return*ARCHER_h_coeff, 0)
+
 
         p_next_value = p_next_value.detach()
         target_p_value = 1/t*((1-her_used)*1/(self.args.replay_k + 1) + exact_goal_tensor*self.args.replay_k/(self.args.replay_k + 1)) + p_next_value*(t-1)/t
@@ -223,13 +243,16 @@ class ddpg_agent:
         # create the dict for store the model
         if args.apply_ratio: 
             agent_name = "usher"
+        elif args.archer: 
+            agent_name = "ARCHER"
         elif args.two_goal: 
             agent_name = "two-goal"
         elif args.replay_k == 0:
             agent_name = "q-learning"
         else:
             agent_name = "her"
-        key = f"name_{args.env_name}__noise_{args.action_noise}__agent_{agent_name}.txt"
+        reward_type = "positive_reward" if args.positive_rewards else "negative_reward"
+        key = f"name_{args.env_name}_{reward_type}__noise_{args.action_noise}__agent_{agent_name}.txt"
         self.recording_path = "logging/recordings/" + key
         if MPI.COMM_WORLD.Get_rank() == 0:
             if not os.path.exists(self.args.save_dir):
@@ -503,6 +526,8 @@ class ddpg_agent:
                     actions = pi.detach().cpu().numpy().squeeze(axis=0)
 
                 observation_new, r, _, info = self.env.step(actions)
+                if self.args.positive_rewards: 
+                    r += 1
                 total_r += r*self.args.gamma**t
                 obs = observation_new['observation']
                 g = observation_new['desired_goal']

@@ -77,23 +77,23 @@ if __name__ == '__main__':
         print("Saved value estimator")
 
 
-    n = 100
-    evs = [agent._eval_agent() for _ in range(n)]
-    success_rate = sum([evs[i]['success_rate'] for i in range(n)])/n
-    reward_rate = sum([evs[i]['reward_rate'] for i in range(n)])/n
-    value_rate = sum([evs[i]['value_rate'] for i in range(n)])/n
-    if LOGGING and MPI.COMM_WORLD.Get_rank() == 0:
-        log_file_name = f"logging/{args.env_name}.txt"
-        text = f"action_noise: {args.action_noise}, "   
-        text +=f"\ttwo_goal: {args.two_goal}, \n"            
-        text +=f"\tsuccess_rate: {success_rate}\n"         
-        text +=f"\taverage_reward: {reward_rate}\n"        
-        text +=f"\taverage_initial_value: {value_rate}\n"  
-        text +="\n"
+    # n = 100
+    # evs = [agent._eval_agent() for _ in range(n)]
+    # success_rate = sum([evs[i]['success_rate'] for i in range(n)])/n
+    # reward_rate = sum([evs[i]['reward_rate'] for i in range(n)])/n
+    # value_rate = sum([evs[i]['value_rate'] for i in range(n)])/n
+    # if LOGGING and MPI.COMM_WORLD.Get_rank() == 0:
+    #     log_file_name = f"logging/{args.env_name}.txt"
+    #     text = f"action_noise: {args.action_noise}, "   
+    #     text +=f"\ttwo_goal: {args.two_goal}, \n"            
+    #     text +=f"\tsuccess_rate: {success_rate}\n"         
+    #     text +=f"\taverage_reward: {reward_rate}\n"        
+    #     text +=f"\taverage_initial_value: {value_rate}\n"  
+    #     text +="\n"
 
-        with open(log_file_name, "a") as f:
-            f.write(text)
+    #     with open(log_file_name, "a") as f:
+    #         f.write(text)
 
-        print("Log written")
+    #     print("Log written")
 
 
