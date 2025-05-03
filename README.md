@@ -6,7 +6,7 @@ conda install -f environment.yaml
 
 ## Discrete: 
 `cd discrete_usher`\
-`python clean_q_implementation`\
+`python clean_q_implementation.py`
 
 ## Continuous: 
 `cd continuous_usher`\
