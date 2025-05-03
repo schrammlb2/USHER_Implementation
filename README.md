@@ -1,18 +1,19 @@
 # USHER_CoRL
-Code for the CoRL submission "USHER: Unbiased Sampling for Hindsight Experience Replay"
+This is the official implementation for the CoRL 2023 paper "USHER: Unbiased Sampling for Hindsight Experience Replay" (https://arxiv.org/abs/2207.01115). The code is divided into two main sections. Discrete contains an implementation of the discrete version of USHER, as well as scripts for the discrete experiments. Continuous contains the continuous implementation and the continuous experiments. 
 
 ## Installation: 
-conda 
+conda install -f environment.yaml
 
 ## Discrete: 
-`cd discrete_usher`
-`python clean_q_implementation`
+`cd discrete_usher`\
+`python clean_q_implementation`\
+
 ## Continuous: 
-`cd continuous_usher`
-Torus: `bash torus_freeze.sh`
-Car with Random Noise: `bash car_experiment.sh`
-Red Light: `bash red_light.sh`
-Fetch Robot: `bash fetch.sh`
-Throwing experiment: `bash run_throwing_experiment.sh`
-Simulated Mechanum robot: `bash run_sim_to_real_experiment.sh`
-Analytic Mechanum robot model: `bash run_analytic_omnibot.sh`
+`cd continuous_usher`\
+Torus: `bash torus_freeze.sh`\
+Car with Random Noise: `bash car_experiment.sh`\
+Red Light: `bash red_light.sh`\
+Fetch Robot: `bash fetch.sh`\
+Throwing experiment: `bash run_throwing_experiment.sh`\
+Simulated Mechanum robot: `bash run_sim_to_real_experiment.sh`\
+Analytic Mechanum robot model: `bash run_analytic_omnibot.sh`\
